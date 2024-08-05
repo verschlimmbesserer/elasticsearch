@@ -1,0 +1,12 @@
+---
+
+- name: Start elasticsearch
+  ansible.builtin.systemd:
+    name: elasticsearch
+    state: started
+    enabled: true
+
+- name: Restart elasticsearch
+  ansible.builtinsystemd:
+    name: elasticsearch
+    state: restarted
